@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>About Me</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<h2>Jay-Ar Anos</h2>
+
+<nav>
+<a href="index.html">•Home</a>
+<a href="photo.html">•Photo</a>
+<a href="about.html">•About Me</a>
+<a href="contact.html">•Contact</a>
+</nav>
+
+</header>
+
+<section class="about">
+
+<h1>About Me</h1>
+
+<p>
+My name is Jay-Ar Anos, and I am 16 years old. I am currently a Grade 11 ICT student in the section of Diligence at CMDI School. I am a hardworking and dedicated student who always tries to do my best in my studies. I enjoy learning new things and improving my skills, especially in technology and creative projects. Being part of CMDI has helped me grow academically and personally, and I strive to become a better version of myself every day.
+</p>
+
+<p>
+
+</p>
+
+<!-- THREE CLICKABLE BOXES -->
+
+<div class="info-boxes">
+
+<div class="box" onclick="activateBox(this)">
+<h3>My Skills</h3>
+<p>I have skills in basic web development such as HTML and CSS, which I use to create simple websites and digital projects.</p>
+</div>
+
+<div class="box" onclick="activateBox(this)">
+<h3>My Experience</h3>
+<p>In terms of experience, I have worked on school projects that involve creating simple websites, digital presentations, and creative assignments.</p>
+</div>
+
+<div class="box" onclick="activateBox(this)">
+<h3>My Goals</h3>
+<p>My goal is to continue improving my skills in technology and web development while I am still studying in CMDI school.</p>
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+function activateBox(box){
+
+document.querySelectorAll(".box").forEach(b=>{
+b.classList.remove("active");
+});
+
+box.classList.add("active");
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- POPUP INTRO -->
+<div id="popup" class="popup">
+  <div class="popup-box">
+    <h2>Would you like to explore the portfolio of Jay-Ar Anos?</h2>
+    <p>Press Enter to continue</p>
+    <button onclick="enterSite()">Enter</button>
+  </div>
+</div>
+
+<!-- NAVIGATION BAR -->
+
+<header class="navbar">
+
+<h2>Jay-Ar Anos</h2>
+
+<nav>
+<a href="index.html">•Home</a>
+<a href="photo.html">•Photo</a>
+<a href="about.html">•About Me</a>
+<a href="contact.html">•Contact</a>
+</nav>
+
+</header>
+
+<!-- HOME SECTION -->
+
+<section class="home">
+
+<!-- LEFT IMAGE -->
+
+<div class="left">
+
+<img src="" alt="Portfolio Image">
+
+</div>
+
+<!-- RIGHT TEXT -->
+
+<div class="right">
+
+<h1>My Portfolio</h1>
+
+<p>
+Welcome to my portfolio website.
+Feel free to explore the collection of my photography, learn more about who I am and what I do, and connect with me by visiting my contact page if you would like to get in touch.
+</p>
+
+<a href="photo.html" class="btn">Explore My Photos</a>
+
+</div>
+
+</section>
+
+<script>
+
+window.onload = function(){
+  document.getElementById("popup").classList.add("show");
+}
+
+function enterSite(){
+  document.getElementById("popup").classList.remove("show");
+}
+
+document.addEventListener("keydown", function(event){
+  if(event.key === "Enter"){
+    enterSite();
+  }
+});
+
+</script>
+
+</body>
+
+</html>
